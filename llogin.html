@@ -1,0 +1,133 @@
+<html>
+    <head>
+  <title>Login Form</title>
+  <style>
+    
+    body {
+        background-image: url('bg.jpg');
+                background-size: cover;
+                height: 100vh;
+                width: 1000px;
+                
+            }
+            body:after {
+                content:'';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 160%;
+                width: 100%;
+                background-color: rgba(199, 35, 35, .3);
+            }
+    form {
+        border-radius: 10px;
+        width: 300px;
+        margin-left: 470px;
+        margin-top: 17vh;
+        background: rgb(199, 104, 104);
+        position: absolute;
+        z-index: 1;
+        height: 65vh;
+    }
+    form h2 {
+        font-family: Georgia;
+        text-align: center;
+        margin-bottom: 8vh;
+    }
+
+    button{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition:  0.3s;
+            position: relative;
+            z-index: 1;
+        }
+        button:hover {
+        background-color: #45a049;
+}
+    p {
+      color: whitesmoke;
+      font-size: 14px;
+      text-align: center;
+
+    }
+
+    @media(max-width: 992px) { 
+        form {
+            width: 700px;
+            height: 40vh;
+            margin-left: 130px;
+            margin-top: 25vh;
+            
+        }
+        h2 {
+            font-size: 70px;
+        }
+
+        label {
+            font-size: 50px;
+            
+        }
+
+        input {
+            height: 3vh;
+            width: 300px;
+            font-size: 40px;
+        }
+
+        a {
+            font-size: 35px;
+        }
+        button {
+            font-size: 40px;
+        }
+      p {
+        font-size: 30;
+      }
+    }
+  </style>
+</head>
+<body>
+  <form id="loginForm" target="menu">
+    <h2>Login Form</h2>
+    <center><label for="username">Username:</label>
+    <input type="text"  id="username" required></center>
+    <br>
+
+    <center><label for="password">Password:</label>
+    <input type="password"  id="password" required></center>
+    <p id="message"></p>
+    <center><a href="pw.html" target="menu">Lupa Password?</a></center>
+    <br>
+
+    <center><button type="button" onclick="login()">Login</button></center>
+  </form>
+
+  
+
+  <script>
+    function login() {
+      let username = document.getElementById('username').value;
+      let password = document.getElementById('password').value;
+
+      let correctUsername = 'Admin123';
+      let correctPassword = '12345678';
+
+      if (username === correctUsername && password === correctPassword) {
+        window.open("transaksi.html", "menu")
+      } else {
+        document.getElementById('message').textContent = 'Username atau password salah. Silakan coba lagi.';
+      }
+    }
+  </script>
+
+</body>
+</html>

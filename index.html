@@ -1,0 +1,69 @@
+<html >
+    <head>
+        <title>Mitra Sejati</title>
+        <link rel="icon" href="logokop.png">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+            .frame {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .header, .menu, .footer {
+                width: 100%;
+            }
+
+            .header {
+                height: 10vh;
+            }
+
+            .menu {
+                height: 85vh;
+            }
+
+            .footer {
+                height: 5vh;
+            }
+
+            iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+            @media(max-width: 992px) {
+                .header{
+                    height: 6vh;
+                }
+                .menu{
+                    height: 91vh;
+                }
+                .footer{
+                    height: 4vh;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="frame">
+            <div class="header">
+                <iframe src="header.html" name="header"></iframe>
+            </div>
+
+            <div class="menu">
+                <iframe src="menu.html" name="menu"></iframe>
+            </div>
+
+            <div class="footer">
+                <iframe src="footer.html" name="footer"></iframe>
+            </div>
+        </div>
+    </body>
+</html>

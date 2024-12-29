@@ -1,0 +1,66 @@
+<html>
+    <header>
+        <style>
+            body {
+                background-image: url('bg.jpg');
+                background-size: cover;
+                
+            }
+            body:after {
+                content:'';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(199, 35, 35, .3);
+            
+            }
+
+            div {
+                z-index: 1;
+                position: absolute;
+                left: 15;
+            }
+
+            h2 {
+                color: rgb(179, 61, 61);
+                justify-content: center;
+                font-size: 23;
+                font-style: italic;
+                
+            }
+
+            ul li{
+                font-family: georgia;
+                font-size: 20;
+                color: aliceblue;
+            }
+            
+            @media (max-width: 992px) {
+                h2 {
+                    font-size: 50px;
+                    text-align: center; 
+                }
+
+                ul li {
+                    font-size: 40px;
+                }
+            }
+        </style>
+    </header>
+    <body>
+        <div class="isi">
+        <h2>Website ini berfungsi sebagai sarana untuk mengenalkan perusahaan kepada audiens, baik itu calon klien, mitra bisnis, maupun publik secara umum. Dengan tampilan yang profesional, informatif, dan mudah diakses. Dengan tampilan yang profesional, informatif, dan mudah diakses, website company profile dapat menjadi media yang efektif untuk menampilkan informasi penting tentang perusahaan.</h2>
+        <ul type="square">
+            <li><b>Aplikasi sudah di sesuikan dengan media query max-width:992px (layar smartphone).</b></li>
+            <li>File <i>Header</i> dan <i>Menu</i> di dalam nya terdapat tag <b><'nav'>,<'img'>, <'ul'> & <'li'>.</li>
+            <li>Halaman Profile berisikan profile perusahaan di dalam nya terdapat input <b>Layout CSS,<'img'>. </li>
+            <li>Halaman Login berisikan <b> <'form'> </b>dan sudah di Validasi dengan JavaScript fungsi <b>If Else</b> tertera peringatan jika kolom belum terisi.</b></li>
+            <li>Halaman Transaksi berisi kan halaman untuk menginput data yang di sesuaikan dengan tag <b><'input'>,<'select'> dan Submit <'button'> </b> serta sudah di beri kan <u>validasi peringatan bila ada kolom yang belum terisi</u>.</li>
+            <li>Halaman Data Transaksi berisikan <b><'table'></b> yang di dalam nya berisikan data hasil input <i> Halaman transaksi</i> yang sudah di sesuaikan oleh Javascript.</li>
+            </ul>
+            </div>
+        </body>
+</html>

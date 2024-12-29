@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: rgb(199, 104, 104);
+                height: 100vh;
+            }
+
+            .header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px 10%;
+                background: rgb(199, 104, 104);
+                display: flex;
+                align-items: center;
+                z-index: 100;
+                justify-content: space-between;
+            }
+
+            img {
+                width: auto;
+                height: 70vh;
+                margin-left: 10px;
+                transform: translateX(-500px);
+            }
+            .logo {
+                font-size: 28px;
+                color: white;
+                text-decoration: none;
+                font-weight: 700;
+                font-family: sans-serif;
+            }
+
+            .navbar a {
+                font-size: 16px;
+                color: white;
+                font-family: georgia;
+                text-decoration: none;
+                font-weight: 500;
+                margin-left: 35px;
+                transition: 1s;
+                text-align: right;
+            }
+
+            .navbar a:hover {
+                color: gray;
+            }
+
+           
+            @media(max-width: 992px) {
+                img {
+                    transform: translateY(5%);
+                    height: 80vh;
+                    width: auto;
+                }
+              .header .logo {
+                display: none;
+                    
+                }
+                .navbar a {
+                    font-size: 25px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Mitra Sejati</a>
+            <img src="logokop.png">
+            <nav class="navbar">
+                <a href="Home.html" target="menu">Beranda</a>
+                <a href="Profile.html" target="menu">Profil</a>
+                <a href="llogin.html" target="menu">Login</a>
+            </nav>
+        </header>
+    </body>
+</html>
